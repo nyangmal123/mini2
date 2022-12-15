@@ -13,10 +13,6 @@ import { useSelector, useDispatch } from 'react-redux';
 const App = () => {
   // const TodosStore = useSelector((state) => state);
   // console.log(TodosStore);
-  const handleDeleteButtonClick = useSelector((state) => state);
-  console.log(handleDeleteButtonClick);
-  const dispatch = useDispatch();
-  return <div></div>;
 
   const [todos, setTodos] = useState(initialState);
   return (
