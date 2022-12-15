@@ -8,12 +8,16 @@ import { v4 as uuidv4 } from 'uuid';
 import TodoList from './components/TodoList';
 import Footer from './components/Footer';
 import './App.css';
-// import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 const App = () => {
-  // todos : todo라는 객체를 여러개 가지고 있는 배열!
   // const TodosStore = useSelector((state) => state);
   // console.log(TodosStore);
+  const handleDeleteButtonClick = useSelector((state) => state);
+  console.log(handleDeleteButtonClick);
+  const dispatch = useDispatch();
+  return <div></div>;
+
   const [todos, setTodos] = useState(initialState);
   return (
     <div>

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const StBox = styled.div`
   max-width: 1200px;
   min-width: 800px;
+  padding: 20px;
   background-color: #faeab1;
   /* display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@ const StBox = styled.div`
 function TodoList({ todos, isActive, setTodos }) {
   return (
     <StBox>
-      <h4>{isActive ? '해야 할 것' : '완료된 것'}</h4>
+      <h3>{isActive ? '해야 할 것' : '완료된 것'}</h3>
       {todos
         .filter((item) => item.isDone === !isActive)
         .map((item) => {

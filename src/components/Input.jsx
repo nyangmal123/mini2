@@ -3,8 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 import styled from 'styled-components';
 
 const IpBox = styled.form`
-  max-width: 800px;
-  /* min-width: px; */
+  max-width: 450px;
+  margin: 20px;
   background-color: #faf8f1;
   display: flex;
   justify-content: space-around;
